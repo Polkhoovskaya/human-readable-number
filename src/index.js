@@ -1,5 +1,7 @@
 module.exports = function toReadable(number) {
 
+    if (number.length > 3) { return 'Add *** number' };
+
     let th = ['hundred', 'thousand', 'million', 'milliard', 'billion'];
     let dg = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     let tn = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
